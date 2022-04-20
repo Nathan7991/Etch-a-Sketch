@@ -6,6 +6,7 @@ Containers
 
 header {
     display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -40,3 +41,13 @@ header {
     box-sizing: inherit;
 }
 */
+
+/*
+===================
+Individual Elements
+===================
+*/
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
