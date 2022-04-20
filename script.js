@@ -1,25 +1,46 @@
-/*
-=========
-Variables
-=========
-*/
-let grid = document.querySelector('.grid');
+//Variables
+
+let etchGrid = document.querySelector('#grid');
 
 let squareAmount = 16;
 
+let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+let result = '';
+
 let i = 0;
 
-let squares = document.createElement('div');
+let divArray = [];
 
 while (i < squareAmount) {
-    let newSquare = document.createElement('div');
-    newSquare.setAttribute('class', 'squares');
-    grid.appendChild(newSquare);
-    i++
+    generateString();
+    divArray.push(result);
+    i++;
 }
 
+divArray.forEach(function(el) {
+    let div = document.createElement('div');
+    div.setAttribute('class', 'squares');
+    grid.appendChild(div);
+});
+
+
 /*
-=========
-Functions
-=========
+let docFrag = document.createDocumentFragment();
+for (let j = 0; j < divArray.length; j++) {
+    docFrag.appendChild(divArray[j]);
+}
+
+document.body.appendChild(docFrag);
 */
+
+// Functions
+
+function generateString(length = 1) {
+    const charactersLength = characters.length;
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+}
