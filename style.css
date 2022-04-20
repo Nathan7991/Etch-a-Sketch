@@ -5,9 +5,20 @@ Containers
 */
 
 .grid {
-    height: 960px;
-    width: 960px;
-    border: solid 1px rgba(0,0,0,0.5);
+    height: 800px;
+    width: 800px;
+    border: solid 5px rgba(0,0,0,1);
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
+/*
+.squares {
+    flex: 1;
+    border: solid 2px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    box-sizing: inherit;
+}
+*/
