@@ -33,14 +33,12 @@ header {
     box-sizing: border-box;
 }
 
-/*
 .squares {
     flex: 1;
     border: solid 2px rgba(0,0,0,0.5);
     border-radius: 10px;
     box-sizing: inherit;
 }
-*/
 
 /*
 ===================
