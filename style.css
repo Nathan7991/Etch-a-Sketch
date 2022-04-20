@@ -4,6 +4,19 @@ Containers
 ==========
 */
 
+header {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.settings {
+    border: solid red 2px;
+}
+
 .grid {
     height: 800px;
     width: 800px;
