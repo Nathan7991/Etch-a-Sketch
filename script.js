@@ -3,7 +3,7 @@
 Variables
 =========
 */
-const grid = document.querySelector('.grid');
+let grid = document.querySelector('.grid');
 
 let squareAmount = 16;
 
