@@ -11,10 +11,15 @@ header {
 .container {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .settings {
-    border: solid red 2px;
+    border: solid rgb(0, 0, 0) 5px;
+    border-radius: 10px;
+    height: 20rem;
+    width: 15rem;
+    align-self: center;
 }
 
 .grid {
