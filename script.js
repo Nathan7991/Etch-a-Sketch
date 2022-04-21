@@ -1,6 +1,6 @@
 //Variables
 
-let etchGrid = document.querySelector('#grid');
+let grid = document.querySelector('#grid');
 
 let squareAmount = 16;
 
@@ -12,7 +12,7 @@ let i = 0;
 
 let divArray = [];
 
-while (i < squareAmount) {
+while (i < squareAmount * squareAmount) {
     generateString();
     divArray.push(result);
     i++;
