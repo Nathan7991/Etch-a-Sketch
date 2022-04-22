@@ -29,6 +29,7 @@ header {
     border: solid 5px rgba(0,0,0,1);
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
