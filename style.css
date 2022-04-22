@@ -33,6 +33,11 @@ header {
     box-sizing: border-box;
 }
 
+.squareContainer {
+    display: flex;
+    flex: 1;
+}
+
 .squares {
     flex: 1 1 60px;
     border: solid 2px rgba(0,0,0,0.5);
