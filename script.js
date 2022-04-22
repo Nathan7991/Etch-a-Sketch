@@ -16,7 +16,7 @@ let divArray = [];
 
 let containerArray = [];
 
-while (i < squareAmount * squareAmount) {
+while (i < squareAmount) {
     generateString();
     generateString2();
     divArray.push(result);
@@ -36,33 +36,16 @@ divArray.forEach(function(el) {
     let div = document.createElement('div');
     let squareContainer = document.createElement('div');
 
-    for (let j = 0; j < divArray.length; j++) {
-        if (j % squareAmount === 0) {
+    for (let j = 0; j < squareAmount; j++) {
             grid.appendChild(squareContainer);
             squareContainer.setAttribute('class', 'squareContainer');
-            for (let x = 0; x < divArray.length; x++) {
+            for (let x = 0; x < squareAmount; x++) {
                 div.setAttribute('class', 'squares');
                 squareContainer.appendChild(div);
             }
         }
-    }
     
-    /*
-    let div = document.createElement('div');
-    div.setAttribute('class', 'squares');
-    grid.appendChild(div);
-    */
 });
-
-
-/*
-let docFrag = document.createDocumentFragment();
-for (let j = 0; j < divArray.length; j++) {
-    docFrag.appendChild(divArray[j]);
-}
-
-document.body.appendChild(docFrag);
-*/
 
 // Functions
 
