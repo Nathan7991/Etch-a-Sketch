@@ -7,6 +7,7 @@ Containers
 header {
     display: flex;
     justify-content: center;
+    height: 70px;
 }
 
 .container {
@@ -24,8 +25,8 @@ header {
 }
 
 #grid {
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 700px;
     border: solid 5px rgba(0,0,0,1);
     border-radius: 10px;
     display: flex;
