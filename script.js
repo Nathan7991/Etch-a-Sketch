@@ -24,14 +24,43 @@ while (i < squareAmount) {
     i++;
 }
 
-/*
-containerArray.forEach(function(el) {
+divArray.forEach(function(el) {
     let squareContainer = document.createElement('div');
-    squareContainer.setAttribute('class', 'squareContainer');
+    
     grid.appendChild(squareContainer);
+    squareContainer.setAttribute('class', 'squareContainer');
+    
+
 });
+
+let squareContainers = document.querySelectorAll('.squareContainer');
+
+squareContainers.forEach(function() {
+    let div = document.createElement('div');
+    div.setAttribute('class', 'squares');
+    
+    let k = 0;
+    while (k < squareAmount) {
+        squareContainers[k].appendChild(div);
+        k++
+    }
+});
+
+/*
+squareContainers.forEach(function() {
+    let div = document.createElement('div');
+
+    for (let j = 0; j < squareAmount; j++) {
+        for(let x = 0; x < squareAmount; x++) {
+            div.setAttribute('class', 'squares');
+            squareContainers[j].appendChild(div);
+        }
+    }
+});
+
 */
 
+/*
 divArray.forEach(function(el) {
     let div = document.createElement('div');
     let squareContainer = document.createElement('div');
@@ -40,12 +69,12 @@ divArray.forEach(function(el) {
             grid.appendChild(squareContainer);
             squareContainer.setAttribute('class', 'squareContainer');
             for (let x = 0; x < squareAmount; x++) {
-                div.setAttribute('class', 'squares');
-                squareContainer.appendChild(div);
+                console.log(`Hello, I am loop #${x} of loop #${j}!`);
             }
         }
     
 });
+*/
 
 // Functions
 
@@ -65,4 +94,9 @@ function generateString2(length = 1) {
     }
 
     return result2;
+}
+
+function insertDiv() {
+        div.setAttribute('class', 'squares');
+        squareContainer.appendChild(div);
 }
