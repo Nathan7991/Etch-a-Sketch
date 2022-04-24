@@ -24,13 +24,18 @@ while (i < squareAmount) {
     i++;
 }
 
+//Id value for each div container
+let idNum = 0;
+// variable for reference to add squares onto each container row.
+let plus = 0;
+
 divArray.forEach(function(el) {
     let squareContainer = document.createElement('div');
     
     grid.appendChild(squareContainer);
     squareContainer.setAttribute('class', 'squareContainer');
-    
-
+    squareContainer.setAttribute('id', idNum);
+    idNum++
 });
 
 let squareContainers = document.querySelectorAll('.squareContainer');
@@ -38,12 +43,10 @@ let squareContainers = document.querySelectorAll('.squareContainer');
 squareContainers.forEach(function() {
     let div = document.createElement('div');
     div.setAttribute('class', 'squares');
-    
-    let k = 0;
-    while (k < squareAmount) {
+    for (let k = 0; k < squareAmount; k++) {
         squareContainers[k].appendChild(div);
-        k++
     }
+    plus++;
 });
 
 /*
